@@ -15,7 +15,7 @@ select distinct concat(c.last_name, ' ', c.first_name), sum(p.amount) over (part
 from payment p, customer c  
 where date(p.payment_date) = '2005-07-30' and p.customer_id = c.customer_id;  
 
-После доработки:
+После доработки:  
 select distinct  
 concat(c.last_name,' ', c.first_name), sum(p.amount)  
 from payment p  
